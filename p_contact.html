@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Contact Page</title>
+	<link rel="icon" type="image/x-icon" href="/images/ethicart.png">
+	<link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+	<div class="main">
+		<div class="navbar">
+			<div class="icon">
+				<img class="logo" alt="ethicart" src="/images/ethicart.png">
+			</div>
+			<div class="menu">
+				<ul>
+					<li><a href="index.html">HOME</a></li>
+					<li><a href="p_product.html">ALL PRODUCTS</a></li>
+					<li><a href="p_contact.html">CONTACT</a></li>
+				</ul>
+			</div>
+			<div class="search">
+				<input class="srch" type="search" name="" placeholder="Type to text">
+				<a href="#"> <button class="btn">Search</button></a>
+			</div>
+			<div class="cart">
+				<a href="p_check.html"> <img class="i_cart" src="/images/Cart.svg" alt="cart"></a>
+			</div>
+			<div class="log">
+				<a href="index.html"> <button class="login">Login</button></a>
+			</div>
+			<div class="box">
+				<div class="contact">
+					<h1>Contact Us</h1>
+					<br><br>
+					<p>Email, call, or send your message. We would like <br>
+						to hear your opinion.</p>
+				</div>
+				<div class="phone">
+					<img class="i_phone" src="/images/phone.svg" alt="phone"></a>
+					<p>+60 1234 56789</p>
+				</div>
+				<div class="email">
+					<img class="i_email" src="/images/email.svg" alt="email"></a>
+					<p>ethicart@gmail.com</p>
+				</div>
+				<div class="submission">
+					<form id="submiss">
+						<input type="text" name="name" placeholder="Name" required>
+						<input type="email" name="email" placeholder="Email" required>
+						<textarea class="comments" placeholder="Your Message" required></textarea>
+						<button class="submit" type="submit">Submit</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script>
+		// Form submission alert
+		document.getElementById('submiss').addEventListener('submit', function (event) {
+			<!-- event.preventDefault(); -->
+			alert('Thank you for contacting us! We will get back to you soon.');
+			this.reset();
+		});
+	</script>
+</body>
+
+</html>
