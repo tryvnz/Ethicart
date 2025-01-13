@@ -38,7 +38,7 @@
 .navbar-links {
     list-style: none;
     display: flex;
-    gap: 50px;
+    gap: 100px;
 }
 
 .navbar a {
