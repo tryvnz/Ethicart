@@ -1,34 +1,39 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-body{
+body {
     font-size: 16px;
-}
-.main{
-    width: 100%;
-    background: linear-gradient(to top, rgba(0,0,0,0),rgba(0,0,0,0)),url(images/Background/Background.jpeg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: repeat;
-    height: 100vh;
+    background: radial-gradient(#01666b,#00151d);
+
 }
 
-.navbar{
-    
+.main {
+    width: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(images/Background/Background.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-repeat: repeat; */
+    height: 100vh;
+    border-bottom: 10px solid rgba(255, 255, 255, 0);
+}
+
+.navbar {
+
     width: 1200px;
     height: 75px;
     margin: auto;
 }
 
-.log{
+.log {
     float: right;
     margin-top: -46px;
 
 }
 
-.login{
+.login {
     width: 100px;
     height: auto;
     border: none;
@@ -44,27 +49,28 @@ body{
     cursor: pointer;
     transition: 0.4s ease;
 }
-.login:hover{
+
+.login:hover {
     background-color: orange;
     color: white;
 }
 
-.cart{
-    padding-top:20px ;
+.cart {
+    padding-top: 20px;
 }
 
-.i_cart{
+.i_cart {
     width: 50px;
     margin-left: -15px;
 }
 
-.icon{
+.icon {
     width: 200px;
     float: left;
     height: 70px;
 }
 
-.logo{
+.logo {
     width: 104px;
     position: relative;
     height: 74px;
@@ -73,26 +79,27 @@ body{
     top: 9px;
 }
 
-.menu{
+.menu {
     width: 400px;
     float: left;
     height: 70px;
 }
 
-ul{
+ul {
     float: left;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-ul li{
+
+ul li {
     list-style: none;
     margin-left: 60px;
     margin-top: 35px;
     font-size: 14px;
 }
 
-ul li a{
+ul li a {
     text-decoration: none;
     color: white;
     font-family: Arial;
@@ -100,17 +107,17 @@ ul li a{
     transition: 0.4s ease-in-out;
 }
 
-ul li a:hover{
+ul li a:hover {
     color: orange;
 }
 
-.search{
+.search {
     width: 330px;
     float: left;
     margin-left: 122px;
 }
 
-.srch{
+.srch {
     font-family: 'Times New Roman';
     width: 200px;
     height: 40px;
@@ -126,7 +133,7 @@ ul li a:hover{
     border-top-left-radius: 5px;
 }
 
-.btn{
+.btn {
     width: 100px;
     height: 40px;
     background: orange;
@@ -135,19 +142,19 @@ ul li a:hover{
     color: white;
     font-size: 15px;
     border-top-right-radius: 5px;
-    border-top-right-radius: 5px; 
+    border-top-right-radius: 5px;
     cursor: pointer;
 }
 
-.btn:focus{
+.btn:focus {
     outline: none;
 }
 
-.srch:focus{
+.srch:focus {
     outline: none;
 }
 
-.content{
+.content {
     width: 1200px;
     height: auto;
     margin: auto;
@@ -155,7 +162,7 @@ ul li a:hover{
     position: relative;
 }
 
-.content .par{
+.content .par {
     padding-left: 20px;
     padding-bottom: 25px;
     font-family: Arial;
@@ -164,7 +171,7 @@ ul li a:hover{
     font-weight: bold;
 }
 
-.content h1{
+.content h1 {
     font-family: 'Times New Roman';
     font-size: 50px;
     padding-left: 20px;
@@ -172,7 +179,7 @@ ul li a:hover{
     letter-spacing: 2px;
 }
 
-.content .cn{
+.content .cn {
     width: 160px;
     height: 40px;
     background: orange;
@@ -185,33 +192,37 @@ ul li a:hover{
     transition: .4s ease;
 }
 
-.content .cn a{
+.content .cn a {
     text-decoration: none;
     color: black;
     transition: .3s ease;
 }
 
-.cn:hover{
+.cn:hover {
     background-color: white;
 }
 
-.content span{
+.content span {
     color: orange;
     font-size: 60px;
 }
 
-.form{
+.form {
     width: 250px;
     height: 380px;
-    background: linear-gradient(to top, rgba(0,0,0,0.8)50%,rgba(0,0,0,0.8)50%);
-    position: absolute;
-    top: -20px;
-    left: 870px;
+    float: right;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8)50%, rgba(0, 0, 0, 0.8)50%);
+    position: relative;
     border-radius: 10px;
     padding: 25px;
+    transform: translateY(-137%);
 }
 
-.form h2{
+.form p {
+    color: white;
+}
+
+.form h2 {
     width: 220px;
     font-family: sans-serif;
     text-align: center;
@@ -223,7 +234,7 @@ ul li a:hover{
     padding: 8px;
 }
 
-.form input{
+.form input {
     width: 240px;
     height: 35px;
     background: transparent;
@@ -238,16 +249,16 @@ ul li a:hover{
     font-family: sans-serif;
 }
 
-.form input:focus{
+.form input:focus {
     outline: none;
 }
 
-::placeholder{
+::placeholder {
     color: white;
     font-family: Arial;
 }
 
-.btnn{
+.btnn {
     width: 240px;
     height: 40px;
     background: orange;
@@ -260,40 +271,41 @@ ul li a:hover{
     transition: 0.4s ease;
 }
 
-.btnn:hover{
+.btnn:hover {
     background: white;
     color: orange;
 }
 
-.btnn a{
+.btnn a {
     text-decoration: none;
     color: black;
     font-weight: bold;
 }
 
-.form .link{
+.form .link {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 17px;
     padding-top: 20px;
     text-align: center;
 }
 
-.form .link a{
+.form .link a {
     text-decoration: none;
     color: orange;
 }
 
-.liw{
+.liw {
     padding-top: 15px;
     padding-bottom: 10px;
     text-align: center;
 }
 
-.icons a{
+.icons a {
     text-decoration: none;
     color: white;
 }
-.icons ion-icon{
+
+.icons ion-icon {
     color: white;
     font-size: 30px;
     padding-left: 14px;
@@ -301,22 +313,22 @@ ul li a:hover{
     transition: 0.3s ease;
 }
 
-.icons ion-icon:hover{
+.icons ion-icon:hover {
     color: orange;
 }
 
 /*--------------product page--------------*/
 
-.product{
+.product {
     display: flex;
-    
+
 }
 
 /*--------------checkout page--------------*/
 
 /*--------------contact page--------------*/
 
-.box{
+.box {
     margin-left: -24px;
     width: 1236.9px;
     background-color: rgba(247, 247, 247, 0.95);
@@ -324,15 +336,15 @@ ul li a:hover{
     background-size: 50%;
     height: 552px;
     margin-top: 24px;
-   
+
 
 }
 
-.contact{
+.contact {
     margin-left: 200px;
     font-size: larger;
     padding-top: 100px;
-    color:rgb(69, 63, 63) ;
+    color: rgb(69, 63, 63);
 }
 
 .phone {
@@ -344,11 +356,11 @@ ul li a:hover{
     font-weight: bold;
 }
 
-.i_phone{
+.i_phone {
     height: 20px;
 }
 
-.email{
+.email {
     padding-top: 30px;
     padding-left: 200px;
     max-width: 50%;
@@ -356,11 +368,12 @@ ul li a:hover{
     font-size: 20px;
     font-weight: bold;
 }
-.i_email{
+
+.i_email {
     height: 15px;
 }
 
-.submission{
+.submission {
     width: 250px;
     height: 380px;
     background: #b3b3b3;
@@ -369,10 +382,10 @@ ul li a:hover{
     left: 870px;
     border-radius: 10px;
     padding: 25px;
-    
+
 }
 
-.submission input{
+.submission input {
     width: 240px;
     height: 35px;
     background: white;
@@ -385,11 +398,11 @@ ul li a:hover{
     padding-left: 10px;
 }
 
-.submission ::placeholder{
+.submission ::placeholder {
     color: black;
 }
 
-.comments{
+.comments {
     width: 240px;
     height: 190px;
     background: white;
@@ -403,7 +416,7 @@ ul li a:hover{
     padding-top: 10px;
 }
 
-.submit{
+.submit {
     margin-top: 10px;
     background-color: rgb(59, 59, 59);
     color: white;
