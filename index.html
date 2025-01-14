@@ -145,9 +145,9 @@
 	<div class="form-class">
 		<form id="log_in" class="form" hidden>
 			<h2>Login Here</h2>
-			<input type="email" name="email" placeholder="Enter Email Here" required>
-			<input type="password" name="" placeholder="Enter Pasword" required>
-			<button class="btnn"><a href="p_product.html">Login</a></button>
+			<input type="email" id="email" name="email" placeholder="Enter Email Here" required>
+			<input type="password" id="password" name="password" placeholder="Enter Pasword" required>
+			<button class="btnn" id="submit-login">login</button>
 
 			<p class="link">Don't have an account<br>
 				<a href="#">Sign up </a> here</a>
@@ -195,6 +195,18 @@
 				currentIndex = index;
 				updateCarousel();
 			});
+		});
+
+		document.getElementById("submit-login").addEventListener("click", function () {
+			event.preventDefault();
+			let email = document.getElementById("email").value;
+			let password = document.getElementById("password").value;
+			if (email === "admin@contoh" && password === "admin") {
+				alert("Login Success");
+				window.location.href = "p_product.html";
+			} else {
+				alert("Invalid email or password");
+			}
 		});
 
 		function asd(a) {
